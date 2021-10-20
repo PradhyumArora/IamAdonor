@@ -89,7 +89,7 @@
                 id="dropdown01"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >Drop</a
+                >Help</a
               >
               <ul class="dropdown-menu" aria-labelledby="dropdown01">
                 <li>
@@ -103,8 +103,8 @@
               </ul>
             </li>
           </ul>
-          <span class="nav-item">
-            <a class="btn-outline-sm" href="#signup">Sign up</a>
+          <span class="nav-item" id="Loginsignupbtn">
+            <a class="btn-outline-sm" href="#signup">Login / Sign up</a>
           </span>
         </div>
       </div>
@@ -194,12 +194,12 @@
 
           <div class="col-lg-6 col-xl-7">
             <div class="text-container">
-              <h2>Find donors/recipients in your locality</h2>
+              <h2>Find Donors/Recipient in your locality</h2>
               <ul class="list-unstyled li-space-lg">
                 <li class="d-flex">
                   <i class="fas fa-square"></i>
                   <div class="flex-grow-1">
-                    You can easily filter donors/recipients based on their city
+                    You can easily filter Donors/Recipients based on their city
                   </div>
                 </li>
                 <li class="d-flex">
@@ -434,13 +434,14 @@
                 </p>
               </div>
 
-              <form id="account-form">
+              <form id="account-form" action= "signup.php" method="POST">
                 <div class="form-group">
                   <input
                     id="name-input"
                     type="text"
                     class="form-control-input"
                     placeholder="Name"
+                    name="name"
                     required
                   />
                 </div>
@@ -449,6 +450,7 @@
                     type="email"
                     class="form-control-input"
                     placeholder="Email"
+                    name="email"
                     required
                   />
                 </div>
@@ -457,6 +459,7 @@
                     type="password"
                     class="form-control-input"
                     placeholder="Password"
+                    name="pwd"
                     required
                   />
                 </div>
@@ -464,6 +467,7 @@
                   id="city-input"
                   class="form-control-input form-select mb-4"
                   aria-label="Default select example"
+                  name="city"
                 >
                   <option selected>Select your city</option>
                   <option value="Ahmedabad">Ahmedabad</option>
@@ -471,9 +475,10 @@
                   <option value="Surat">Surat</option>
                 </select>
                 <div class="form-group">
-                  <button type="submit" class="form-control-submit-button">
+                  
+                 <button type="submit" name="subbtn" class="form-control-submit-button"> 
                     Submit
-                  </button>
+                </button> 
                 </div>
               </form>
             </div>
@@ -568,3 +573,5 @@
     <script src="js/scripts.js"></script>
   </body>
 </html>
+
+

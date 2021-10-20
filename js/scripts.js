@@ -85,7 +85,6 @@ var cardSlider = new Swiper(".card-slider", {
 });
 
 /* Back To Top Button */
-// Get the button
 myButton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -105,73 +104,121 @@ function topFunction() {
 
 // Changing Home Page Form
 const loginFormBtn = document.querySelector(".login-form");
+const formContainer = document.querySelector("#form-container");
 
-// Function for changing form content to login form
+const loginMarkup = `
+<div class="d-flex flex-wrap align-center">
+<h2 class="form-title">Login</h2>
+<p class="change-form text-muted flex-grow-1">
+Don't have an account?
+  <a class="text-primary signup-form">Sign up</a>
+</p>
+</div>
 
-function getLoginForm() {
-  document.querySelector(".form-title").innerText = "Login";
+<form id="account-form" action="login.php" method="POST">
 
-  document.querySelector(".change-form").innerHTML = `
-  Don't have an account?
-  <a onclick="getSignUpForm()" class="text-primary">Sign Up</a>
+<div class="form-group">
+  <input
+    type="email"
+    class="form-control-input"
+    placeholder="Email"
+    name="email"
+    required
+  />
+</div>
+<div class="form-group">
+  <input
+    type="password"
+    class="form-control-input"
+    placeholder="Password"
+    name="pwd"
+    required
+  />
+</div>
+<div class="form-group">
+  <button
+    type="submit"
+    name="subbtn"
+    class="form-control-submit-button"
+  >
+    Submit
+  </button>
+</div>
+</form>
 `;
 
-  document.querySelector("#name-input").remove();
-  document.querySelector("#city-input").remove();
+const signupMarkup = `
+<div class="d-flex flex-wrap align-center">
+<h2 class="form-title">Sign Up</h2>
+<p class="change-form text-muted flex-grow-1">
+  Already have an account?
+  <a class="text-primary login-form">Login</a>
+</p>
+</div>
+
+<form id="account-form" action="signup.php" method="POST">
+<div class="form-group">
+  <input
+    id="name-input"
+    type="text"
+    class="form-control-input"
+    placeholder="Name"
+    name="name"
+    required
+  />
+</div>
+<div class="form-group">
+  <input
+    type="email"
+    class="form-control-input"
+    placeholder="Email"
+    name="email"
+    required
+  />
+</div>
+<div class="form-group">
+  <input
+    type="password"
+    class="form-control-input"
+    placeholder="Password"
+    name="pwd"
+    required
+  />
+</div>
+<select
+  id="city-input"
+  class="form-control-input form-select mb-4"
+  aria-label="Default select example"
+  name="city"
+>
+  <option selected>Select your city</option>
+  <option value="Ahmedabad">Ahmedabad</option>
+  <option value="Gandhinagar">Gandhinagar</option>
+  <option value="Surat">Surat</option>
+</select>
+<div class="form-group">
+  <button
+    type="submit"
+    name="subbtn"
+    class="form-control-submit-button"
+  >
+    Submit
+  </button>
+</div>
+</form>
+`;
+
+function getLoginForm() {
+  formContainer.innerHTML = loginMarkup;
+  document
+    .querySelector(".signup-form")
+    .addEventListener("click", getSignUpForm);
 }
 
 function getSignUpForm() {
-  document.querySelector(".form-title").innerText = "Sign Up";
-  let changeForm = document.querySelector(".change-form");
-  changeForm.innerHTML = "";
-  changeForm.insertAdjacentHTML(
-    "afterbegin",
-    `Already have an account?
-	<a onclick="getLoginForm()" class="text-primary login-form">Login</a>`
-  );
-
-  const markup = `<div class="form-group">
-	<input
-	  id="name-input"
-	  type="text"
-	  class="form-control-input"
-	  placeholder="Name"
-	  required
-	/>
-  </div>
-  <div class="form-group">
-	<input
-	  type="email"
-	  class="form-control-input"
-	  placeholder="Email"
-	  required
-	/>
-  </div>
-  <div class="form-group">
-	<input
-	  type="password"
-	  class="form-control-input"
-	  placeholder="Password"
-	  required
-	/>
-  </div>
-  <select
-	id="city-input"
-	class="form-control-input form-select mb-4"
-	aria-label="Default select example"
-  >
-	<option selected>Select your city</option>
-	<option value="Ahmedabad">Ahmedabad</option>
-	<option value="Gandhinagar">Gandhinagar</option>
-	<option value="Surat">Surat</option>
-  </select>
-  <div class="form-group">
-	<button type="submit" class="form-control-submit-button">
-	  Submit
-	</button>
-  </div>`;
-
-  document.querySelector("#account-form").innerHTML = markup;
+  formContainer.innerHTML = signupMarkup;
+  document.querySelector(".login-form").addEventListener("click", getLoginForm);
 }
 
+// Function for changing form content to login form
 loginFormBtn.addEventListener("click", getLoginForm);

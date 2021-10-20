@@ -425,7 +425,7 @@
           </div>
 
           <div class="col-lg-6">
-            <div class="text-container">
+            <div id="form-container" class="text-container">
               <div class="d-flex flex-wrap align-center">
                 <h2 class="form-title">Sign Up</h2>
                 <p class="change-form text-muted flex-grow-1">
@@ -434,7 +434,7 @@
                 </p>
               </div>
 
-              <form id="account-form" action= "signup.php" method="POST">
+              <form id="account-form" action="signup.php" method="POST">
                 <div class="form-group">
                   <input
                     id="name-input"
@@ -475,10 +475,13 @@
                   <option value="Surat">Surat</option>
                 </select>
                 <div class="form-group">
-                  
-                 <button type="submit" name="subbtn" class="form-control-submit-button"> 
+                  <button
+                    type="submit"
+                    name="subbtn"
+                    class="form-control-submit-button"
+                  >
                     Submit
-                </button> 
+                  </button>
                 </div>
               </form>
             </div>
@@ -573,5 +576,3 @@
     <script src="js/scripts.js"></script>
   </body>
 </html>
-
-

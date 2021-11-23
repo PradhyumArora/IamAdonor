@@ -13,6 +13,6 @@
  }
  else
  {
-   echo "Invalid Login Credentials you bitch";
+   echo "Invalid Login Credentials";
  }
 ?>

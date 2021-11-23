@@ -647,6 +647,13 @@ a:hover {
   margin-bottom: 0.25rem;
   width: 18px;
 }
+#details-btn {
+  text-decoration: none;
+  width: 100%;
+}
+.mt-huge {
+  margin-top: 7rem;
+}
 @media (min-width: 768px) {
   .header {
     padding-top: 11rem;

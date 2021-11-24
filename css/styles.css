@@ -654,6 +654,18 @@ a:hover {
 .mt-huge {
   margin-top: 7rem;
 }
+
+.card {
+  margin-bottom: 2rem;
+}
+
+.card .card-img-top {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  align-self: center;
+}
+
 @media (min-width: 768px) {
   .header {
     padding-top: 11rem;
@@ -682,6 +694,7 @@ a:hover {
     width: 400px;
   }
 }
+
 @media (min-width: 992px) {
   .navbar {
     padding-top: 1.75rem;

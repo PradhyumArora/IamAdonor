@@ -82,7 +82,7 @@
           <div class="card" style="width: 16rem">
             <img src="./images/A+.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title text-center" style="color:green">Recipients</h5>
+              <h5 class="card-title text-center" style="color:green">In Stock</h5>
               <p class="card-text text-center">
               <?php $cn=mysqli_connect('localhost','root','') ?>
                 <?php mysqli_query($cn,"use iamdonor") ?> 
@@ -104,7 +104,7 @@
           <div class="card" style="width: 16rem">
             <img src="./images/A-.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title text-center" style="color:green">Recipients</h5>
+              <h5 class="card-title text-center" style="color:green">In Stock</h5>
               <p class="card-text text-center">
               <?php $cn=mysqli_connect('localhost','root','') ?>
                 <?php mysqli_query($cn,"use iamdonor") ?> 
@@ -126,7 +126,7 @@
           <div class="card" style="width: 16rem">
             <img src="./images/B+.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title text-center" style="color:green">Recipients</h5>
+              <h5 class="card-title text-center" style="color:green">In Stock</h5>
               <p class="card-text text-center">
               <?php $cn=mysqli_connect('localhost','root','') ?>
                 <?php mysqli_query($cn,"use iamdonor") ?> 
@@ -148,7 +148,7 @@
           <div class="card" style="width: 16rem">
             <img src="./images/B-.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title text-center" style="color:green">Recipients</h5>
+              <h5 class="card-title text-center" style="color:green">In Stock</h5>
               <p class="card-text text-center">
               <?php $cn=mysqli_connect('localhost','root','') ?>
                 <?php mysqli_query($cn,"use iamdonor") ?> 
@@ -172,7 +172,7 @@
           <div class="card" style="width: 16rem">
             <img src="./images/AB+.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title text-center" style="color:green">Recipients</h5>
+              <h5 class="card-title text-center" style="color:green">In Stock</h5>
               <p class="card-text text-center">
               <?php $cn=mysqli_connect('localhost','root','') ?>
                 <?php mysqli_query($cn,"use iamdonor") ?> 
@@ -194,7 +194,7 @@
           <div class="card" style="width: 16rem">
             <img src="./images/AB-.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title text-center" style="color:green">Recipients</h5>
+              <h5 class="card-title text-center" style="color:green">In Stock</h5>
               <p class="card-text text-center">
               <?php $cn=mysqli_connect('localhost','root','') ?>
                 <?php mysqli_query($cn,"use iamdonor") ?> 
@@ -216,7 +216,7 @@
           <div class="card" style="width: 16rem">
             <img src="./images/o+.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title text-center" style="color:green">Recipients</h5>
+              <h5 class="card-title text-center" style="color:green">In Stock</h5>
               <p class="card-text text-center">
               <?php $cn=mysqli_connect('localhost','root','') ?>
                 <?php mysqli_query($cn,"use iamdonor") ?> 
@@ -238,7 +238,7 @@
           <div class="card" style="width: 16rem">
             <img src="./images/o-.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title text-center" style="color:green">Recipients</h5>
+              <h5 class="card-title text-center" style="color:green">In Stock</h5>
               <p class="card-text text-center">
               <?php $cn=mysqli_connect('localhost','root','') ?>
                 <?php mysqli_query($cn,"use iamdonor") ?> 

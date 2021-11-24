@@ -9,10 +9,14 @@
  $ans = mysqli_fetch_row($result);
  if ($pass==$ans[0])
  {
+   session_start();
+   $_SESSION['email']=$email;
    header('location:index.html');
  }
  else
- {
-   echo "Invalid Login Credentials";
+ {  
+    $message = "Invalid Credentials";
+    echo "<script type='text/javascript'>alert('$message');";
+    echo 'window.location= "index.html#signup" </script>';
  }
 ?>

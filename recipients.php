@@ -38,15 +38,15 @@
        >
          <ul class="navbar-nav ms-auto navbar-nav-scroll">
            <li class="nav-item">
-             <a class="nav-link active" aria-current="page" href="#header"
+             <a class="nav-link " aria-current="page" href="index.html#header"
                >Home</a
              >
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#details">Details</a>
+             <a class="nav-link" href="index.html#details">Details</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#services">Services</a>
+             <a class="nav-link" href="index.html#services">Services</a>
            </li>
 
            <li class="nav-item dropdown">
